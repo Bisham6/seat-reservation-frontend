@@ -1,0 +1,56 @@
+/* seat-layout.component.css */
+.seat {
+  width: 50px;
+  height: 50px;
+  margin: 5px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  text-align: center;
+  line-height: 50px;
+}
+
+.reserved {
+  background-color: red;
+  /* or any other color you prefer */
+  color: white;
+}
+
+.available {
+  background-color: green;
+  /* or any other color you prefer */
+  color: white;
+}
+
+/* seat-booking-form.component.css */
+.booking-form-container {
+  max-width: 400px;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+}
+
+input {
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}

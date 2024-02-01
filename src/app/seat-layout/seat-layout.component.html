@@ -1,0 +1,16 @@
+
+<div class="booking-form-container">
+  <h2>Seat Booking Form</h2>
+  <div class="form-group">
+    <label for="numberOfSeats">Number of Seats:</label>
+    <input type="string" [(ngModel)]="numberOfSeats" id="numberOfSeats" placeholder="Enter number of seats"  />
+  </div>
+  <button (click)="bookSeats()">Book Seats</button>
+</div>
+
+
+
+<h1>seat status</h1>
+<div class="seat" *ngFor="let seat of seats" [ngClass]="{ reserved: seat.isReserved, available: !seat.isReserved }">
+    {{ seat.seatNumber }}
+  </div>
